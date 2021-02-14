@@ -1,23 +1,24 @@
 <html><head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
         <title>Kevins Website</title>
         <style>
             nav{
-  background-color:darkgrey;
+  background-color:lightblue;
   height: 30px;
+  margin: 0px;
 }
-.nav{
+.bar{
   padding: 3px;
   position:relative;
   top: 5px;
-  color:blue;
+  color:darkseagreen;
 }
-.nav nav:hover{
+.bar:hover{
    padding: 3px;
   position:relative;
   top: 5px;
-  background-color:darkblue;
+  background-color:blue;
 }
 header
 ,body{
@@ -30,16 +31,44 @@ header
 }
 h1{
   font-family: 'Press Start 2P', cursive;
+  background-color:blue;
+  margin: 0px;
   }
+.gametile{
+         height: 75%;
+         width: 100%;
+         background-color: lightgrey;
+}
+.gametileblock{
+        text-align:center;
+      height: 22%;
+         width: 22%;
+        background-color: lightgrey;
+         margin: 2%;
+                }
         </style>
-    <style type="text/css">.container, .pictures, .content, .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {cursor: url("data:image/png;base64,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") 1 1 , auto !important; }.gtx-trans-icon, .nav, .nav.cc_pointer, .cc_pointer,[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon { cursor: url("data:image/png;base64,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") 12 3, auto !important; } </style></head>
-    <body style="" data-new-gr-c-s-check-loaded="14.995.0" data-gr-ext-installed="">
-              <header>
+        </head>
+        <body>
+           <header><h1 class="bar">Kevin's Games</h1>
             <nav>
-            <h1 class="nav">Kevin's Games</h1>
-                <a href="https://kevin051606.github.io/" class="nav">Home</a>
-                <a href="https://github.com/kevin051606" class="nav">My profile</a>
-            </nav>
-        </header>
-          
+            
+                <a href="https://kevin051606.github.io/" class="bar">Home</a>
+                <a href="https://github.com/kevin051606" class="bar">My profile</a>
+                <input placeholder="search"> 
+             </nav>
+         </header> 
+                 <div class="gameRowOne"> 
+                      <div class="gametileblock cc_cursor">
+                      
+                      <img src="https://www.gaithersburgdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png" class="gametile">       
+                      <div class="text">
+                             <p>Lost Knight</p>
+                      </div>
+                      </div>
+                      <div></div>
+                      
+                      
+                      
+                </div>
+        
 </body></html>
